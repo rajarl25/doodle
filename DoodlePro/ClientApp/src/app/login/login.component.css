@@ -1,0 +1,142 @@
+.form-control {
+  min-height: 41px;
+  box-shadow: none;
+  border-color: #e1e4e5;
+}
+
+  .form-control:focus {
+    border-color: #49c1a2;
+  }
+
+.form-control, .btn {
+  border-radius: 3px;
+}
+
+.signup-form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+  .signup-form form {
+    color: #9ba5a8;
+    /*border-radius: 3px;*/
+    margin-bottom: 15px;
+    background: #fff;
+    /*box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);*/
+    padding: 30px;
+  }
+
+  .signup-form h2 {
+    color: #000;
+    font-weight: bold;
+    margin-top: 0;
+  }
+
+  .signup-form hr {
+    margin: 0 -30px 20px;
+  }
+
+  .signup-form .form-group {
+    margin-bottom: 20px;
+  }
+
+  .signup-form label {
+    font-weight: normal;
+    font-size: 13px;
+    color: #000;
+  }
+
+  .signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    background: #49c1a2;
+    border: none;
+    min-width: 140px;
+  }
+
+    .signup-form .btn:hover, .signup-form .btn:focus {
+      background: #3cb094;
+      outline: none !important;
+    }
+
+  .signup-form a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+    .signup-form a:hover {
+      text-decoration: none;
+    }
+
+  .signup-form form a {
+    color: #0f87ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+    .signup-form form a:hover {
+      text-decoration: underline;
+    }
+
+.topbar {
+  background-color: #0F1523;
+}
+
+  .topbar img {
+    padding-bottom: 7px;
+  }
+
+.bottombar {
+  padding: 30px;
+  background-color: #0F1523;
+  color: #b3bac4;
+}
+
+
+#bottomlinks li {
+  list-style-type: none;
+  display: inline;
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+  #bottomlinks li a {
+    list-style-type: none;
+    color: #b3bac4;
+    font-weight: normal;
+  }
+
+.lightblue {
+  background-color: #F6FAFB;
+}
+
+#divider {
+  height: 0.25px;
+  color: #323e51;
+  margin: auto;
+  padding: auto;
+}
+
+.signup {
+  background-color: #f73859 !important;
+}
+
+.emailpdg {
+  padding-top: 20px;
+}
+
+.acceptt {
+  margin-top: 0px;
+  padding: 5px;
+}
+
+.footer a {
+  color: #0f87ff;
+  font-weight: bold;
+}
+
+
+.lglink a {
+  color: #000;
+}
