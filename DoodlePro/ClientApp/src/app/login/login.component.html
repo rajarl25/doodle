@@ -16,28 +16,25 @@
         <input type="password" class="form-control" name="password" required="required" placeholder="Password">
       </div>
 
-      <div class="form-group">
-        <label class="checkbox-inline">
-          <input type="checkbox" required="required" class="acceptt"> <p class="small text-center">
-            Remember Me
-          </p>
+      <div class="form-group  rem">
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input" value="">Remember Me
         </label>
+        
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary btn-block btn-lg signup">Login</button>
+        <button type="submit" class="btn btn-primary btn-block btn-lg signup" [routerLink]='["/dashboard"]'>Login</button>
       </div>
       <div class="small text-center lglink"><a href="#">Forgot Password</a></div>
     </form>
-    <div class="small text-center lglink">New to Here <a [routerLink]='["/login"]' class="lglink">Login here</a></div>
+    <div class="small text-center lglink">New to Here <a [routerLink]='["/create-account"]'>Sign Up Now</a></div>
   </div>
 </div>
 <div class="container bottombar">
-  <div class="pull-left text-center">
+  <div class="float-left text-center">
     <p class="small text-center"> &#160; Doodle Stanza 2019 - Stanza Inc. All Rights Reserved.</p>
-
-
   </div>
-  <div class="pull-right footer">
+  <div class="float-right footer">
     <ul id="bottomlinks">
       <li><a href="#" class="small">Privacy Policy</a></li>
       <li><a href="#" class="small">Terms and Conditions</a></li>

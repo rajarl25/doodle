@@ -8,12 +8,15 @@ import { AppComponent } from './app.component';
 
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { LoginComponent } from './login/login.component';
-
+import { MainHeaderComponent } from './main-header/main-header.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   declarations: [
     AppComponent,
     CreateAccountComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+  MainHeaderComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -24,6 +27,7 @@ import { LoginComponent } from './login/login.component';
      
       { path: 'create-account', component: CreateAccountComponent },
       { path: 'login', component: LoginComponent },
+      { path: 'dashboard', component: DashboardComponent },
     ])
   ],
   providers: [],

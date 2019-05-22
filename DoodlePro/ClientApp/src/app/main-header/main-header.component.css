@@ -1,0 +1,70 @@
+
+.header {
+  background-color: black;
+  border: 1px;
+  padding: 0px;
+  margin: 0px;
+  color: white;
+}
+
+.middleh {
+  background-color: black;
+  border: 2px;
+  padding: 5px;
+  margin: 0px;
+  color: white;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+ 
+ 
+}
+
+.doodlogo {
+  margin-left:35px;
+}
+
+li {
+  float: left;
+  display: inline;
+}
+
+  li a {
+   
+    color: white;
+    text-align: center;
+   margin-right:15px;
+    text-decoration: none;
+  }
+
+
+
+.topbar {
+  background-color: #0F1523;
+}
+
+
+.gopro {
+  padding: 10px;
+  margin-top: 0px;
+  height: 30px;
+  border: 1px solid #f73859;
+  color: #f73859;
+  -moz-box-shadow: 5px 5px 5px #f73859;
+  -webkit-box-shadow: 10px 10px 10px #f73859;
+  box-shadow: 10px 10px 10px #f73859;
+}
+
+.fa-user-circle{
+
+  font-size:27px;
+}
+
+.search{
+
+  margin-left:20px;
+}

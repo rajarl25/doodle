@@ -88,7 +88,7 @@
     padding-bottom:7px;
   }
 .bottombar {
-  padding: 30px;
+  padding: 40px;
   background-color: #0F1523;
   color: #b3bac4;
 }
@@ -128,17 +128,40 @@
 
 .acceptt{
   
-  margin-top:0px;
+  margin-top:3px;
+  margin-right:5px;
  padding:5px;
+}
+
+.checkbox-inline
+{
+
+width:100%;
 }
 
 .footer a {
   color: #0f87ff;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 
 .lglink{
   color:#000;
 
+}
+
+::-webkit-input-placeholder {
+  font-size: 11px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  font-size: 11px;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  font-size: 11px;
+}
+
+:-ms-input-placeholder {
+  font-size: 11px;
 }
