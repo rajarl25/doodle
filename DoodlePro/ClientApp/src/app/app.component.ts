@@ -14,5 +14,6 @@ export class AppComponent {
     console.log('test');
 
     this.isLoggedIn = true;
+    console.log('logged In Successfully');
   }
 }
