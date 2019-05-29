@@ -1,4 +1,4 @@
-<div class="container topbar">
+<!--<div class="container topbar">
   <div class="row">
 
 
@@ -40,4 +40,97 @@
     </div>
 
   </div>
-</div>
+</div>-->
+
+<mat-icon>home</mat-icon>
+<mat-toolbar class="p-0 mat-elevation-z1">
+  <button class="btn-primary">Test Button 2</button>
+  <mat-progress-bar *ngIf="showLoadingBar"
+                    class="loading-bar"
+                    color="primary"
+                    mode="indeterminate">Progress</mat-progress-bar>
+  <div fxFlex fxFill fxLayout="row" fxLayoutAlign="start center">
+    <div fxFlex="1 0 auto" fxLayout="row" fxLayoutAlign="start center">
+      <button mat-button
+              class="toggle-button-navbar mat-icon-button"
+              *ngIf="!noNav"
+              (click)="toggleSidebarOpened('navbar')"
+              fxHide.gt-md>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+  <button mat-button>Click me!</button>
+  <button mat-button color="primary">Primary</button>
+  <button mat-button>Click me!</button>
+  <button mat-button color="primary">Primary</button>
+
+  <div class="toolbar-separator" fxHide.gt-md></div>
+  <div fxFlex="0 1 auto" fxLayout="row" fxLayoutAlign="center center">
+    <a class="fullscreeen-button" (click)="toogleFullScreen()">
+      <mat-icon *ngIf="!isFullScreen()"
+                class="s-32 fullscreen-icon"
+                matTooltip="Full Screen"
+                matTooltipPosition="right">fullscreen</mat-icon>
+      <mat-icon *ngIf="isFullScreen()"
+                class="s-32 fullscreen-icon"
+                matTooltip="Exit Full Screen"
+                matTooltipPosition="right">fullscreen_exit</mat-icon>
+    </a>
+  </div>
+</mat-toolbar>
+
+
+-- nav bar ----
+<ng-container >
+  <div class="navbar-vertical">
+    <div class="navbar-header">
+      <div class="logo">
+        <!--<img class="logo-icon"
+             [ngClass]="{ hide: appConfig.config.colorClasses.navbar.indexOf('white') > -1 }"
+             src="../../../assets/images/logos/applogo.png" />
+        <img class="logo-icon"
+             [ngClass]="{ hide: appConfig.config.colorClasses.navbar.indexOf('white') < 0 }"
+             src="../../../assets/images/logos/applogoblue.png" />-->
+        <span class="logo-text">Product Master</span>
+      </div>
+      <button mat-button
+              class="toggle-button-navbar mat-icon-button p-0"
+              (click)="toggleSidebarFolded('navbar')"
+              fxHide.lt-lg>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-button
+              class="toggle-button-navbar mat-icon-button"
+              (click)="toggleSidebarOpened('navbar')"
+              fxHide.gt-md>
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    </div>
+    <div class="navbar-content" appPerfectScrollbar>
+      app navigation
+      <!--<app-navigation [navigation]="navigation" layout="vertical"></app-navigation>-->
+      <!-- Vertical Navigation Layout -->
+      <ng-container *ngIf="layout === 'vertical'">
+        <ng-container *ngFor="let item of navigation">
+          <span *ngIf="item.type==='group'">
+            <app-nav-vertical-group *appAuthRoles="navigationService.groupRoles(item)" [item]="item"></app-nav-vertical-group>
+          </span>
+          <span *ngIf="item.type==='collapse'">
+            <app-nav-vertical-collapse *appAuthRoles="navigationService.groupRoles(item)" [item]="item"></app-nav-vertical-collapse>
+          </span>
+          <span *ngIf="item.type==='item'">
+            <app-nav-vertical-item *appAuthRoles="item.roles" [item]="item"></app-nav-vertical-item>
+          </span>
+        </ng-container>
+      </ng-container>
+      <!-- / Vertical Navigation Layout -->
+    </div>
+  </div>
+</ng-container>
+<ng-container *ngIf="layout == 'horizontal'">
+  <div class="navbar-horizontal">
+    <!--<app-navigation [navigation]="navigation" layout="horizontal"></app-navigation>-->
+    app navigation
+  </div>
+</ng-container>

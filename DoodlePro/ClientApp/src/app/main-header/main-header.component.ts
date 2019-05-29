@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as screenfull from 'screenfull';
 
 @Component({
   selector: 'app-main-header',
@@ -8,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class MainHeaderComponent implements OnInit {
 
   constructor() { }
+  showLoadingBar=false;
+  isFullScreen() {
+    return screenfull.isFullscreen;
+  }
 
   ngOnInit() {
   }

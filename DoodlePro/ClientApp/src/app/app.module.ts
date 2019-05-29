@@ -8,19 +8,21 @@ import { AppComponent } from './app.component';
 
 import { CreateAccountComponent } from './create-account/create-account.component';
 import { LoginComponent } from './login/login.component';
-import { MainHeaderComponent } from './main-header/main-header.component';
+import { MainHeaderModule } from './main-header/main-header.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 @NgModule({
   declarations: [
     AppComponent,
     CreateAccountComponent,
     LoginComponent,
-    DashboardComponent,
-  MainHeaderComponent
+    //DashboardComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
+    MainHeaderModule,
     HttpClientModule,
+    DashboardModule,
     FormsModule,
     RouterModule.forRoot([
       { path: '', component: CreateAccountComponent, pathMatch: 'full' },
